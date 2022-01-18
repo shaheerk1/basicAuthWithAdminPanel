@@ -1,0 +1,29 @@
+<%- include('partials/header'); -%>
+
+<div class="main-container">
+
+  <div class="body-wrapper">
+    <div>
+
+        <% if (user) { %>
+          <% if (user.isAdmin) { %>
+            <div class="admin">
+              <a href="/api/admindashboard">admin panal</a>
+            </div>
+            <br>
+            <hr>
+        
+          <% } %>
+      
+        <% } %>
+
+    
+          </div>
+
+    <br>
+    <div>This is Home and anyone can view this. </div>
+  </div>
+  
+  
+</div>
+<%- include('partials/footer'); -%>
